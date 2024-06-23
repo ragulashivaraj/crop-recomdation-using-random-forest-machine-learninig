@@ -1,0 +1,15 @@
+
+
+
+import pickle
+
+# Load the pickled object
+with open('RandomForest.pkl', 'rb') as f:
+    data = pickle.load(f)
+
+# Example: Printing the content of the pickled object
+print(data)
+
+# Example: Writing to a Python file
+with open('output.py', 'w') as py_file:
+    py_file.write(f"data = {data}")
